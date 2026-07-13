@@ -193,7 +193,7 @@ def classification_banner(level: str):
 # --------------------------------------------------------------------------
 # Sidebar — data source
 # --------------------------------------------------------------------------
-st.sidebar.markdown("##  CyberSentinel")
+st.sidebar.markdown("### CyberSentinel")
 st.sidebar.markdown(
     '<span class="subtle">Live volumetric forecasting & behavioral anomaly '
     "detection over network security data.</span>",
