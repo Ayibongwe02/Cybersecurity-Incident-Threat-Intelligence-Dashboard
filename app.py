@@ -61,22 +61,13 @@ MANILA = "#E8DCC3"
 HAIRLINE = "#DDD5C4"
 CHART_TEMPLATE = "plotly_white"
 
-# Fixed light-theme colors. The app previously used Streamlit's theme CSS
-# variables (var(--text-color) etc.), which follow whatever light/dark mode
-# the viewer's browser or Streamlit "Settings" menu selects. That's what
-# caused the inconsistent switching — on some viewers the theme resolved to
-# dark, clashing with the cream/manila palette. Using fixed hex values here
-# instead means the page always renders the same way regardless of the
-# viewer's theme setting. Paired with .streamlit/config.toml (theme.base =
-# "light") and client.toolbarMode = "minimal" (which hides the Settings
-# menu's theme toggle), this locks the app to a single permanent light theme.
+# The app previously used Streamlit's theme CSS# menu's theme toggle), this locks the app to a single permanent light theme.
 PAGE_TEXT = CHARCOAL
 PAGE_BG = BG_CREAM
 PAGE_SECONDARY_BG = MANILA
 
 # Traffic Light Protocol (TLP) — the real convention security analysts use to
-# mark how widely a piece of intelligence may be shared. Used here as the
-# page-level classification banner instead of a generic page subtitle.
+
 TLP = {
     "RED":   {"color": CRIMSON, "label": "TLP:RED",   "desc": "Not for disclosure — restricted to named recipients"},
     "AMBER": {"color": AMBER,   "label": "TLP:AMBER", "desc": "Limited disclosure — internal use only"},
@@ -92,8 +83,7 @@ REQUIRED_INCIDENT_COLS = {
 
 # --------------------------------------------------------------------------
 # Page config & styling — analyst case-file aesthetic: cream/manila paper,
-# a serif "field report" display face, JetBrains Mono for raw data, and a
-# TLP classification banner as the recurring signature element.
+
 # --------------------------------------------------------------------------
 st.set_page_config(page_title="CyberSentinel — Threat Intelligence", page_icon="🛡️", layout="wide")
 
@@ -203,7 +193,7 @@ def classification_banner(level: str):
 # --------------------------------------------------------------------------
 # Sidebar — data source
 # --------------------------------------------------------------------------
-st.sidebar.markdown("## 🛡️ CyberSentinel")
+st.sidebar.markdown("##  CyberSentinel")
 st.sidebar.markdown(
     '<span class="subtle">Live volumetric forecasting & behavioral anomaly '
     "detection over network security data.</span>",
