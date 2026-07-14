@@ -1,0 +1,13 @@
+[theme]
+base = "light"
+primaryColor = "#D9534F"
+backgroundColor = "#F9F6F0"
+secondaryBackgroundColor = "#E8DCC3"
+textColor = "#1A1D20"
+font = "sans serif"
+
+[client]
+# "minimal" hides the hamburger menu (which is where the Light/Dark/"Use
+# system setting" toggle lives), so viewers can't switch the app into dark
+# mode even accidentally.
+toolbarMode = "minimal"
